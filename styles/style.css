@@ -153,7 +153,7 @@ ul {
     width: 100%;
     display: flex;
     justify-content: left;
-    gap: 31px;
+    gap: 21px;
     margin-top: 57px;
 }
 
@@ -197,7 +197,7 @@ ul {
 
     @media (max-width: 767px) {
         .left_items-upper h1 {
-            font-size: 27px;
+            font-size: 26px;
         }
     }
 
@@ -232,8 +232,14 @@ ul {
     
 }
 
+
+
 .links li:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
+}
+
+.links li:active {
+    transform: scale(0.7);
 }
 
 .links li img {
@@ -241,6 +247,30 @@ ul {
     max-height: 35px;
     object-fit: cover;
     margin-bottom: -3px;
+}
+
+@media (max-width: 767px) {
+    .links li {
+        width: 51px;
+        height: 51px;
+        background-color: #C4C4C4;
+        border-radius: 50%;
+        box-shadow: 3px 5px 5px #393838;
+    }
+
+    .links li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links li img {
+        max-width: 31px;
+        max-height: 31px;
+        
+    }
 }
 
 .intro_right {
@@ -342,12 +372,11 @@ ul {
     text-align: justify;
 }
 
-.left_items button {
+.left_items a {
     border: initial;
     background: initial;
     border-left: 3px solid #ffffff;
     border-right: 3px solid #ffffff;
-    /* background-color: #1D1D1D; */
     padding: 10px 15px;
     color: #ffffff;
     text-transform: uppercase;
@@ -356,13 +385,10 @@ ul {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 52px;
-    /* border-top: 3px solid #1D1D1D;
-    border-bottom: 3px solid #1D1D1D; */
+
 }
 
 .left_items button:hover {
-    /* border-top: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff; */
     transition: 0.5s ease; 
 }
 
@@ -402,7 +428,7 @@ ul {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 58vmax;
-        padding: 0 25px;
+        /* padding: 0 25px; */
         /* transform: rotate(-23deg); */
     }
 
@@ -460,19 +486,24 @@ ul {
 
 .aboutMe p{
     width: 90%;
-    max-width: 767px;
+    max-width: 727px;
     align-self: center;
     font-family: 'OpenSans';
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 400;
     margin-top: 72px;
 }
 
-.aboutMe button{
+.aboutMe a{
     width: 170px;
     height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'MtBold';
     font-size: 15px;
     line-height: 100%;
+    color: #000000;
     align-self: center;
     text-transform: uppercase;
     margin-top: 67px;
@@ -813,7 +844,7 @@ figcaption{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 122px;
+    gap: 32px;
     padding-bottom: 67px;
     background: radial-gradient(circle at center, #ffffff 0%, #e9e8e8 50%, #c5c4c4 100%);
 }
@@ -865,6 +896,7 @@ figcaption{
     flex-direction: column;
     gap: 53px;
     position: relative;
+    padding-top: 75px;
 }
 
 .form::after {
