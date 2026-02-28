@@ -191,6 +191,7 @@ header {
     width: 105%;
     height: 2px;
     background-color: #ffffff;
+    transform-origin: left;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
