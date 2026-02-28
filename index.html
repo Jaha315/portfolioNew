@@ -12,6 +12,9 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navbar.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -51,14 +54,14 @@
             </div>
             <div class="intro_right">
                 <!-- <img src="assets/images/image 17.png" alt="#"/> -->
-                 <img src="assets/images/photo-author.png" alt="#"/>
+                 <img src="assets/images/photo-author.webp" alt="#"/>
             </div>
         </section>
         <section class="description">
             <div class="desc-items">
                 <div class="left_items">
                     <h2>IT BERRIES</h2>
-                    <p>
+                    <p class="scroll-slide-left">
                         Разрабатываю пользовательские интерфейсы для веб-приложений и сайтов. 
                         Создаю цифровые решения, которые работают стабильно и приносят пользу.
                         Внимательно отношусь к требованиям, срокам и качеству исполнения.
@@ -68,7 +71,7 @@
                         Открыт к сотрудничеству над интересными проектами. 
 
                     </p>
-                    <a href="#aboutMe-title">Читать больше</a>
+                    <a class="slide-inBig" href="#aboutMe-title">Читать больше</a>
                 </div>
                 <div class="right-pict">
                     <img src="assets/images/it_in_border.png" alt="#"/>
@@ -82,7 +85,7 @@
             <div class="about">
                 <div class="aboutMe" id="aboutMe">
                     <h2 id="aboutMe-title">Обо мне</h2>
-                    <p>
+                    <p class="slide-inBig">
                         Я помогаю компаниям и частным клиентам создавать современные веб-интерфейсы.
                         Беру на себя полный цикл фронтенд-разработки — от идеи до готового решения.
                         Использую современные технологии и практики веб-разработки.
@@ -94,7 +97,7 @@
                 </div>
     
                 <div class="skillsDesc" id="skillsDesc">
-                    <div class="skillsDesc-item" style="--bg-image: url('../assets/icons/design.png')">
+                    <div class="skillsDesc-item scroll-slide-left" style="--bg-image: url('../assets/icons/design.png')">
                         <h3>Дизайн</h3>
                         <p>
                             Создаю удобные и понятные интерфейсы для веб-приложений. 
@@ -102,7 +105,7 @@
                         </p>
                     </div>
     
-                    <div class="skillsDesc-item" style="--bg-image: url('../assets/icons/development.png')">
+                    <div class="skillsDesc-item scroll-slide-right" style="--bg-image: url('../assets/icons/development.png')">
                         <h3>Разработка</h3>
                         <p>
                             Разрабатываю современные веб-интерфейсы и адаптивные сайты. 
@@ -110,7 +113,7 @@
                         </p>
                     </div>
     
-                    <div class="skillsDesc-item" style="--bg-image: url('../assets/icons/maintenance.png')">
+                    <div class="skillsDesc-item scroll-fade-up" style="--bg-image: url('../assets/icons/maintenance.png')">
                         <h3>Обслуживание сайта</h3>
                         <p>
                             Обеспечиваю стабильную работу сайта после запуска. 
@@ -215,21 +218,6 @@
                 <!-- Над этим нужно по работать!!! -->
                 <div class="projects">
                     <div class="project-item">
-                        <a href="#">
-                            <img src="assets/images/Project.png" alt="#"/>
-                        </a>
-                    </div>
-                    <div class="project-item">
-                        <a href="#" >
-                            <img src="assets/images/night.png" alt="#"/>
-                        </a>
-                    </div>
-                    <div class="project-item">
-                        <a href="#" >
-                            <img src="assets/images/Project-car.png" alt="#"/>
-                        </a>
-                    </div>
-                    <div class="project-item">
                         <a href="https://jaha315.github.io/saint-petersburg" target="_blank">
                             <img src="assets/images/screen_SP-sait.png" alt="#"/>
                         </a>
@@ -252,6 +240,24 @@
                             <img src="assets/images/cyberpunk-sait.png" alt="#"/>
                         </a>
                     </div>
+
+                    
+                    <div class="project-item">
+                        <a href="https://jaha315.github.io/test-lend-dog" target="_blank">
+                            <img src="assets/images/site_of_dog-painter.webp" alt="#"/>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="http://www.hazzojp.ru/" target="_blank">
+                            <img src="assets/images/site_hazzo.webp" alt="#" />
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://jaha315.github.io/site_of_appartments" target="_blank" >
+                            <img src="assets/images/site_of_appartments.webp" alt="#"/>
+                        </a>
+                    </div>
+                    
                 </div>
                 <div class="portfolioDown-desc">
                     <a href="https://github.com/Jaha315" target="_blank">Мой гитхаб</a>
@@ -262,11 +268,11 @@
         <section class="contact" id="contact">
             <div class="contactUp">
                 <h2>Контакты</h2>
-                <p>
-                    Nulla in velit a metus rhoncus tempus. 
-                    Nulla congue nulla vel sem varius finibus. 
-                    Sed ornare sit amet lorem sed viverra. In vel urna 
-                    quis libero viverra facilisis ut ac est.
+                <p class="slide-inBig">
+                    Есть идея для проекта или просто
+                    хотите узнать больше о моей работе?
+                    Напишите мне - с удовольствием отвечу 
+                    на все вопросы и обсудим детали сотрудничества.
                 </p>
                 <div class="contact-pict">
                     <img src="assets/icons/separatorBlack 1.png" alt="#"/>
@@ -318,6 +324,7 @@
         </div>
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/jquery.js"></script>
 </body>
 </html>
